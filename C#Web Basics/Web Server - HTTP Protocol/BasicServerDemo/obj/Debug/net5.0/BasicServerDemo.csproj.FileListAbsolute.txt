@@ -1,0 +1,16 @@
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.AssemblyInfoInputs.cache
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.AssemblyInfo.cs
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.csproj.CoreCompileInputs.cache
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.exe
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.deps.json
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.runtimeconfig.json
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.runtimeconfig.dev.json
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.dll
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\ref\BasicServerDemo.dll
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\bin\Debug\net5.0\BasicServerDemo.pdb
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.dll
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\ref\BasicServerDemo.dll
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.pdb
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.genruntimeconfig.cache
+C:\Users\Miroslav Vasilev\source\repos\BasicServerDemo\BasicServerDemo\obj\Debug\net5.0\BasicServerDemo.csproj.AssemblyReference.cache

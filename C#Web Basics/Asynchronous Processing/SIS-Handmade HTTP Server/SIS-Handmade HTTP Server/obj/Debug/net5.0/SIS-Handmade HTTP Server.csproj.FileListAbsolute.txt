@@ -1,0 +1,16 @@
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.exe
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.deps.json
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.runtimeconfig.json
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.runtimeconfig.dev.json
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.dll
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\ref\SIS-Handmade HTTP Server.dll
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\bin\Debug\net5.0\SIS-Handmade HTTP Server.pdb
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.csproj.AssemblyReference.cache
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.AssemblyInfoInputs.cache
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.AssemblyInfo.cs
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.csproj.CoreCompileInputs.cache
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.dll
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\ref\SIS-Handmade HTTP Server.dll
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.pdb
+C:\Users\Miroslav Vasilev\source\repos\SIS-Handmade HTTP Server\SIS-Handmade HTTP Server\obj\Debug\net5.0\SIS-Handmade HTTP Server.genruntimeconfig.cache

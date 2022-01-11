@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ss2drOVMHmkTUk6ukVKEhB83+BS6DUDe0bERSLP4MWvRTUE5ehZ3xCmuXplS6HuLJNfiddbLMsgZTjJ78ckqIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Miroslav Vasilev\\source\\repos\\SIS-Handmade HTTP Server\\SIS.WebServer\\SIS.WebServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\azure.core\\1.21.0\\azure.core.1.21.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\cloudinarydotnet\\1.16.0\\cloudinarydotnet.1.16.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\microsoft.extensions.webencoders\\5.0.3\\microsoft.extensions.webencoders.5.0.3.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\Miroslav Vasilev\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

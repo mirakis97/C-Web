@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS-Handmade HTTP Server", "SIS-Handmade HTTP Server\SIS-Handmade HTTP Server.csproj", "{AA64C628-8C41-4ADC-8E72-D6072FF63864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.WebServer", "SIS.WebServer\SIS.WebServer.csproj", "{679699F2-F41C-4CBB-AAF3-83D97D48F2BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA64C628-8C41-4ADC-8E72-D6072FF63864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA64C628-8C41-4ADC-8E72-D6072FF63864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA64C628-8C41-4ADC-8E72-D6072FF63864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA64C628-8C41-4ADC-8E72-D6072FF63864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679699F2-F41C-4CBB-AAF3-83D97D48F2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679699F2-F41C-4CBB-AAF3-83D97D48F2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679699F2-F41C-4CBB-AAF3-83D97D48F2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679699F2-F41C-4CBB-AAF3-83D97D48F2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68DADE74-646F-40C8-BF43-A570C2A83BE9}
+	EndGlobalSection
+EndGlobal

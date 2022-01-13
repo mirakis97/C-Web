@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "3e1cc1f0-84e5-428a-b39c-e1d8d7471eea": {
+      "ProjectGuid": "3e1cc1f0-84e5-428a-b39c-e1d8d7471eea",
+      "DisplayName": "SIS",
+      "ColorIndex": 0
+    },
+    "26a82757-2697-4987-b376-bcb47c186d15": {
+      "ProjectGuid": "26a82757-2697-4987-b376-bcb47c186d15",
+      "DisplayName": "BasicWebServer.Server",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

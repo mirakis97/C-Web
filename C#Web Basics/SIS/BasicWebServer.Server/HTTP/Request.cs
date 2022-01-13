@@ -15,7 +15,7 @@ namespace BasicWebServer.Server.HTTP
         public static Request Parse(string request)
         {
             var lines = request.Split("\r\n");
-            var startLine = lines.First().Split(' ');
+            var startLine = lines.First().Split(" ");
 
             var method = ParseMethod(startLine[0]);
             var url = startLine[1];

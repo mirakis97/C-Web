@@ -1,4 +1,5 @@
-﻿using BasicWebServer.Server.HTTP.Responses;
+﻿using BasicWebServer.Server.HTTP;
+using BasicWebServer.Server.HTTP.Responses;
 using BasicWebServer.Server.Responses;
 using HTTP;
 using System;
@@ -19,9 +20,21 @@ namespace SIS
         static void Main()
             => new HttpServer(routes => routes
             .MapGet("/",new TextResponse("Hello from Miroslav server!"))
+            .MapGet("/Redirect", new RedirectResponse("https://softuni.org/"))
             .MapGet("/HTML", new HtmlResponse(StartUp.HtmlForm))
-            .MapPost("/HTML",new TextResponse(""))
-            .MapGet("/Redirect", new RedirectResponse("https://softuni.org/")))
+            .MapPost("/HTML",new TextResponse("",StartUp.AddFormDataAction)))
             .Start();
+
+        private static void AddFormDataAction(
+            Request request , Response response)
+        {
+            response.Body = "";
+
+            foreach (var (key,value) in request.Form)
+            {
+                response.Body += $"{key} - {value}";
+                response.Body += Environment.NewLine;
+            }
+        }
     }
 }

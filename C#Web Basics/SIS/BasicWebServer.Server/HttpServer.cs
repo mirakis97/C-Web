@@ -59,6 +59,12 @@ namespace HTTP
 
                 var response = this.routingTable.MatchRequest(request);
 
+                //Execute pre-render action for the response
+                if (response.PreRenderAction != null)
+                {
+                    response.PreRenderAction(request, response);
+                }
+
                 WriteResponse(networkStream, response);
 
                 connection.Close();

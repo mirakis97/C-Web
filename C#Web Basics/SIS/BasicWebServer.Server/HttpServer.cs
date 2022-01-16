@@ -27,18 +27,18 @@ namespace HTTP
 
             routingTableConfiguration(this.routingTable = new RoutingTable());
         }
-        public HttpServer(int port,Action<IRoutingTable> routingTable)
-            :this("127.0.0.1",port,routingTable)
+        public HttpServer(int port, Action<IRoutingTable> routingTable)
+            : this("127.0.0.1", port, routingTable)
         {
 
         }
         public HttpServer(Action<IRoutingTable> routingTable)
-            : this(8080,routingTable)
+            : this(8080, routingTable)
         {
 
         }
 
-        public void Start()
+        public async Task Start()
         {
             this.serverListener.Start();
 
@@ -47,40 +47,44 @@ namespace HTTP
 
             while (true)
             {
-                var connection = serverListener.AcceptTcpClient();
+                var connection = await serverListener.AcceptTcpClientAsync();
 
-                var networkStream = connection.GetStream();
-
-                var requestText = this.ReadRequest(networkStream);
-
-                Console.WriteLine(requestText);
-
-                var request = Request.Parse(requestText);
-
-                var response = this.routingTable.MatchRequest(request);
-
-                //Execute pre-render action for the response
-                if (response.PreRenderAction != null)
+                _ = Task.Run(async () =>
                 {
-                    response.PreRenderAction(request, response);
-                }
 
-                WriteResponse(networkStream, response);
+                    var networkStream = connection.GetStream();
 
-                connection.Close();
+                    var requestText = await this.ReadRequest(networkStream);
+
+                    Console.WriteLine(requestText);
+
+                    var request = Request.Parse(requestText);
+
+                    var response = this.routingTable.MatchRequest(request);
+
+                    //Execute pre-render action for the response
+                    if (response.PreRenderAction != null)
+                    {
+                        response.PreRenderAction(request, response);
+                    }
+
+                    await WriteResponse(networkStream, response);
+
+                    connection.Close();
+                });
             }
         }
 
-        private void WriteResponse(NetworkStream networkStream, Response response)
+        private async Task WriteResponse(NetworkStream networkStream, Response response)
         {
-           
+
             var resposeByte = Encoding.UTF8.GetBytes(response.ToString());
 
-            networkStream.Write(resposeByte);
+            await networkStream.WriteAsync(resposeByte);
 
         }
 
-        private string ReadRequest(NetworkStream networkStream)
+        private async Task<string> ReadRequest(NetworkStream networkStream)
         {
             var bufferLength = 1024;
             var buffer = new byte[bufferLength];
@@ -90,7 +94,7 @@ namespace HTTP
             var requestBuilder = new StringBuilder();
             do
             {
-                var bytesRead = networkStream.Read(buffer, 0, bufferLength);
+                var bytesRead = await networkStream.ReadAsync(buffer, 0, bufferLength);
 
                 totalBytes += bytesRead;
 

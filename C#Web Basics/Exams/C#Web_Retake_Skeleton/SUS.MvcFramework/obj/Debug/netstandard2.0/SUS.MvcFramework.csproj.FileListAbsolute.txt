@@ -1,0 +1,13 @@
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.deps.json
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.dll
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.pdb
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.dll
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.AssemblyReference.cache
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfoInputs.cache
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfo.cs
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.CoreCompileInputs.cache
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.CopyComplete
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.dll
+C:\Miroslav Apps\Programing\C#Web_Retake_Skeleton\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.pdb

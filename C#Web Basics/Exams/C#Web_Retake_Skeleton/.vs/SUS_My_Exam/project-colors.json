@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a21101d2-3bd3-4b6a-a854-7d5176a43c44": {
+      "ProjectGuid": "a21101d2-3bd3-4b6a-a854-7d5176a43c44",
+      "DisplayName": "SUS.MvcFramework",
+      "ColorIndex": 0
+    },
+    "6ef664e1-15bc-4e31-9b31-68c3dc139d1b": {
+      "ProjectGuid": "6ef664e1-15bc-4e31-9b31-68c3dc139d1b",
+      "DisplayName": "SUS.HTTP",
+      "ColorIndex": 1
+    },
+    "4cc7bd25-8e82-4d37-b8e2-8f942654e611": {
+      "ProjectGuid": "4cc7bd25-8e82-4d37-b8e2-8f942654e611",
+      "DisplayName": "CarShop",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "817226be-0695-4a81-89e1-04df9bf3684c": {
+      "ProjectGuid": "817226be-0695-4a81-89e1-04df9bf3684c",
+      "DisplayName": "SharedTrip",
+      "ColorIndex": 0
+    },
+    "f6260181-0c0a-4509-8933-e2474e97ae02": {
+      "ProjectGuid": "f6260181-0c0a-4509-8933-e2474e97ae02",
+      "DisplayName": "BasicWebServer.Server",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

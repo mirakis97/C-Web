@@ -15,7 +15,6 @@
                .MapStaticFiles());
 
             server.ServiceCollection
-                .Add<IUserService,UserService>()
                 .Add<IPasswordHasher,PasswordHasher>()
                 .Add<IValidator,Validator>()
                 .Add<ApplicationDbContext>();

@@ -1,66 +1,128 @@
-﻿using System.Collections.Generic;
+﻿using SharedTrip.Data;
+using SharedTrip.Data.Models;
+using SharedTrip.Models;
+using SharedTrip.Models.Trips;
+using SharedTrip.Models.Users;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 
 namespace CarShop.Services
 {
     public class Validator : IValidator
     {
-        //public ICollection<string> IsValidIssueForm(AddIssueFormModel model)
-        //{
-        //    var errors = new List<string>();
+        private readonly ApplicationDbContext dbContext;
 
-        //    if (model.CarId == null)
-        //    {
-        //        errors.Add($"Car ID cannot be empty.");
-        //    }
+        public Validator(ApplicationDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
 
-        //    if (model.Description.Length < 5)
-        //    {
-        //        errors.Add($"Description '{model.Description}' is not valid.It must be more than 5 symbols");
-        //    }
+        public void AddUserToTrip(string tripId, string userId)
+        {
+            var user = dbContext.Users.FirstOrDefault(u => u.Id == userId);
+            var trip = dbContext.Trips.FirstOrDefault(t => t.Id == tripId);
 
-        //    return errors;
-        //}
+            if (user == null || trip == null)
+            {
+                throw new ArgumentException("User or trip not found!");
+            }
 
-        //public ICollection<string> ValidateCarCreation(AddCarFormModel model)
-        //{
-        //    var errors = new List<string>();
-        //    if (model.Model.Length < 5 || model.Model.Length > 20)
-        //    {
-        //        errors.Add("Username must be between 4 and 20 elements long!");
-        //    }
-        //    if (model.Year < 1900 || model.Year > 2100)
-        //    {
-        //        errors.Add("Year must be between 1900 and 2100!");
-        //    }
-        //    if (!Regex.IsMatch(model.PlateNumber, @"[A-Z]{2}[0-9]{4}[A-Z]{2}"))
-        //    {
-        //        errors.Add("Plate number must in format 'AA0000AA'!");
-        //    }
+            user.UserTrips.Add(new UserTrip()
+            {
+                TripId = tripId,
+                UserId = userId,
+                Trip = trip,
+                User = user
+            });
 
-        //    return errors;
-        //}
+            dbContext.SaveChanges();
+        }
 
-        //public ICollection<string> ValidateUserRegistration(RegisterUserFormModel model)
-        //{
-        //    var errors = new List<string>();
-        //    if (model.Username.Length < 4 || model.Username.Length > 20)
-        //    {
-        //        errors.Add("Car model must be between 5 and 20 elements long!");
-        //    }
-        //    if (model.Password.Length < 5 || model.Password.Length > 20)
-        //    {
-        //        errors.Add("Password length must be between 5 and 20 sybmols!");
-        //    }
-        //    if (model.Password != model.ConfirmPassword)
-        //    {
-        //        errors.Add("Passwords and its confimation do not match!");
-        //    }
-        //    if (model.UserType != "Mechanic" && model.UserType != "Client")
-        //    {
-        //        errors.Add("User should be 'Mechanic' or 'Client' !");
-        //    }
+        public IEnumerable<TripListViewModel> GetAllTrips()
+        {
+            return dbContext.Trips.Select(x => new TripListViewModel()
+            {
+                DepartureTime = x.DepartureTime.ToString("dd.MM.yyyy HH:mm"),
+                EndPoint = x.EndPoint,
+                StartPoint = x.StartPoint,
+                Id= x.Id,
+                Seats = x.Seats,
+            });
+        }
 
-        //    return errors;
-        //}
+        public TripDetailsViewModel GetTripDetails(string tripId)
+        {
+            return dbContext.Trips
+                .Where(t => t.Id == tripId)
+                .Select(x => new TripDetailsViewModel()
+                {
+                    DepartureTime = x.DepartureTime.ToString("dd.MM.yyyy HH:mm"),
+                    EndPoint = x.EndPoint,
+                    StartPoint = x.StartPoint,
+                    Id = x.Id,
+                    Seats = x.Seats,
+                    ImagePath = x.ImagePath,
+                    Description = x.Description
+                }).FirstOrDefault();
+                
+        }
+
+        public (bool isValid, ICollection<ErrorViewModel> errors) ValidateRegisterModel(RegisterViewModel model)
+        {
+            bool isValid = true;
+            List<ErrorViewModel> errors = new List<ErrorViewModel>();
+
+            if (model.Username == null || model.Username.Length < 5 || model.Username.Length > 20)
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Username must be between 5 and 20 elements long and is required!"));
+            }
+            if (model.Password == null || model.Password.Length < 6 || model.Password.Length > 20)
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Password length must be between 6 and 20 sybmols!"));
+            }
+            if (model.Password != model.ConfirmPassword)
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Passwords and its confimation do not match!"));
+            }
+            if (string.IsNullOrWhiteSpace(model.Email))
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Email is required!"));
+            }
+            return (isValid, errors);
+        }
+
+        public (bool isValid, IEnumerable<ErrorViewModel> errors) ValidateTripAddModel(TripViewModel model)
+        {
+            bool isValid = true;
+            List<ErrorViewModel> errors = new List<ErrorViewModel>();
+            
+            if (string.IsNullOrWhiteSpace(model.StartPoint))
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("StartPoint is required!"));
+            }
+            if (string.IsNullOrWhiteSpace(model.EndPoint))
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("EndPoint is required!"));
+            }
+            if (string.IsNullOrWhiteSpace(model.Description) || model.Description.Length > 80)
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Description is required and must not be more than 80 charecters long!"));
+            }
+            if (model.Seats < 2 || model.Seats > 6)
+            {
+                isValid = false;
+                errors.Add(new ErrorViewModel("Seats must be between 2 and 6!"));
+            }
+            return (isValid, errors);
+        }
     }
 }

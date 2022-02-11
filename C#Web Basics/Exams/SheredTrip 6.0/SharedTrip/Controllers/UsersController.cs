@@ -9,33 +9,43 @@ using SharedTrip.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SharedTrip.Controllers
 {
-    
+
     public class UsersController : Controller
     {
-        private readonly IUserService userService;
         private readonly ApplicationDbContext dbContext;
         private readonly IPasswordHasher passwordHasher;
-        public UsersController(Request request, IUserService userService, IValidator validator, ApplicationDbContext dbContext, IPasswordHasher passwordHasher)
+        private readonly IValidator validator;
+        public UsersController(Request request,IValidator validator, ApplicationDbContext dbContext, IPasswordHasher passwordHasher)
             : base(request)
         {
-            this.userService = userService;
             this.dbContext = dbContext;
+            this.validator = validator;
             this.passwordHasher = passwordHasher;
         }
 
         public Response Login()
-            => View();
+        {
+            if (User.IsAuthenticated)
+            {
+                return Redirect("/Trips/All");
+            }
+            return this.View();
+        }
         public Response Register()
-            => View();
+        {
+            if (User.IsAuthenticated)
+            {
+                return Redirect("/Trips/All");
+            }
+            return this.View();
+        }
         [HttpPost]
         public Response Register(RegisterViewModel model)
         {
-            var (isValid, errors) = userService.ValidateModel(model);
+            var (isValid, errors) = validator.ValidateRegisterModel(model);
             if (this.dbContext.Users.Any(u => u.Username == model.Username))
             {
                 isValid = false;
@@ -88,7 +98,7 @@ namespace SharedTrip.Controllers
 
             return Redirect("/Trips/All");
         }
-
+        [Authorize]
         public Response Logout()
         {
             this.SignOut();

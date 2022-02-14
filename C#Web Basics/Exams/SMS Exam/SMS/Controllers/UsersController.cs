@@ -34,19 +34,24 @@ namespace SMS.Controllers
         [HttpPost]
         public Response Login(LoginViewForm model)
         {
+            Request.Session.Clear();
+            
             var hashedPasword = this.passwordHasher.Hash(model.Password);
             var userId = this.context.Users
                 .Where(u => u.Username == model.Username && u.Password == hashedPasword)
                 .Select(u => u.Id)
-                .FirstOrDefault();
-            if (userId == null)
+                .SingleOrDefault();
+            if (userId != null)
             {
-                return View(new { ErrorMessage = "Login incorrect!" }, "/Error");
+                this.SignIn(userId);
+
+                CookieCollection cookies = new CookieCollection();
+                cookies.Add(Session.SessionCookieName, Request.Session.Id);
+
+                return Redirect("/");
             }
 
-            this.SignIn(userId);
-
-            return Redirect("/");
+            return View(new { ErrorMessage = "Login incorrect!" }, "/Error");
         }
         public Response Register()
         {
@@ -60,16 +65,6 @@ namespace SMS.Controllers
         public Response Register(RegisterViewFormModel model)
         {
             var (isValid, error) = validator.ValidateRegisterModel(model);
-            if (this.context.Users.Any(u => u.Username == model.Username))
-            {
-                isValid = false;
-                error = $"User with '{model.Username}' username already exist!";
-            }
-            if (this.context.Users.Any(u => u.Email == model.Email))
-            {
-                isValid = false;
-                error = $"User with '{model.Email}' e-mail already exist!";
-            }
             if (!isValid)
             {
                 return View(new { ErrorMessage = error }, "/Error");

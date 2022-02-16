@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "618b3213-02ea-4e28-b5d1-9f7bc2edcfdb": {
+      "ProjectGuid": "618b3213-02ea-4e28-b5d1-9f7bc2edcfdb",
+      "DisplayName": "SUS.MvcFramework.Tests",
+      "ColorIndex": 0
+    },
+    "f7f9d37d-78f4-4517-a49b-99654ce64883": {
+      "ProjectGuid": "f7f9d37d-78f4-4517-a49b-99654ce64883",
+      "DisplayName": "Git",
+      "ColorIndex": 1
+    },
+    "c46ee503-4707-4f77-adb7-bbee446559b0": {
+      "ProjectGuid": "c46ee503-4707-4f77-adb7-bbee446559b0",
+      "DisplayName": "BasicWebServer.Server",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

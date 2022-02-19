@@ -1,0 +1,5 @@
+C:\Miroslav Apps\Programing\Andreys\Andreys\obj\Debug\net5.0\Andreys.csproj.AssemblyReference.cache
+C:\Miroslav Apps\Programing\Andreys\Andreys\obj\Debug\net5.0\Andreys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Miroslav Apps\Programing\Andreys\Andreys\obj\Debug\net5.0\Andreys.AssemblyInfoInputs.cache
+C:\Miroslav Apps\Programing\Andreys\Andreys\obj\Debug\net5.0\Andreys.AssemblyInfo.cs
+C:\Miroslav Apps\Programing\Andreys\Andreys\obj\Debug\net5.0\Andreys.csproj.CoreCompileInputs.cache

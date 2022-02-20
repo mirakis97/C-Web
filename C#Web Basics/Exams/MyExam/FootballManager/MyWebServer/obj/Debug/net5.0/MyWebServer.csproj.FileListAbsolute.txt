@@ -1,0 +1,12 @@
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\bin\Debug\net5.0\MyWebServer.deps.json
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\bin\Debug\net5.0\MyWebServer.dll
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\bin\Debug\net5.0\MyWebServer.pdb
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.csproj.AssemblyReference.cache
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.AssemblyInfoInputs.cache
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.AssemblyInfo.cs
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.csproj.CoreCompileInputs.cache
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.dll
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\refint\MyWebServer.dll
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\MyWebServer.pdb
+C:\Miroslav Apps\Programing\MyExam\FootballManager\MyWebServer\obj\Debug\net5.0\ref\MyWebServer.dll
